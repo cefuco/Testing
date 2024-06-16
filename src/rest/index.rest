@@ -1,0 +1,23 @@
+POST http://127.0.0.1:3000/api/users/register
+Content-Type: application/json
+
+{
+    "email": "pepito@gmail.com", 
+    "password": "12345", 
+    "role": "admin"
+}
+
+###
+POST http://127.0.0.1:3000/api/users/login
+Content-Type: application/json
+
+
+{
+    "email": "pepito@gmail.com", 
+    "password": "12345"
+}
+
+###
+GET  http://127.0.0.1:3000/api/users/perfil
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBlcGl0b0BnbWFpbC5jb20iLCJpYXQiOjE3MTc2MzQ1MTd9._6oV5irl8C53LcSvsR4otUIXAokWmHrnlIhPbnbpZnc
